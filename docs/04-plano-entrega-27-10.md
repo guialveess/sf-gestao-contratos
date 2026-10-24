@@ -29,8 +29,9 @@
 
 ### 3. Aplicativo customizado
 - [x] Lightning App "ContratAI" criado com as 7 abas dos objetos
-- [ ] Subir o logotipo (`docs/assets/logo-contratai.png`) no app pela UI (Setup → App Manager → editar ContratAI → Branding) — upload de imagem não é feito via deploy
-- [ ] Definir perfis de acesso ao app (mínimo: visível para todos por enquanto, perfis detalhados entram na fase de Segurança)
+- [x] Acesso ao app/abas/campos liberado via Permission Set `ContratAI_Access`, atribuído ao usuário admin
+- [ ] Subir o logotipo (`docs/assets/logo-contratai.png`) no app pela UI (Setup → App Manager → editar ContratAI → Branding) — upload de imagem não é feito via deploy; cosmético, não bloqueia a entrega
+- [ ] Criar 1–2 registros de teste (um Contrato + uma Cláusula/Aditivo/Renovação relacionada) para mostrar o app funcionando na apresentação
 
 ### 4. Repositório de Código e Configurações (este repositório)
 - [x] Projeto SFDX criado em `salesforce/`
