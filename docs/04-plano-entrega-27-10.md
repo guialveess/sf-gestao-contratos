@@ -48,25 +48,22 @@
 4. Em **Contrato de Serviço → Record Types**, criar Anual / Bienal / Corporativo
 5. **App Manager → New Lightning App** — montar o app com nome, logotipo e abas
 
-## Descobrindo se já existe Org/CLI configurado
+## Org conectada
 
-Rodamos a checagem nesta máquina e **o Salesforce CLI (`sf`/`sfdx`) ainda não está instalado** e não há nenhuma org autenticada localmente.
+- **Tipo**: Developer Edition (criada em developer.salesforce.com, conforme orientação do Gabriel_vds/João Medeiros no Discord)
+- **Instance URL**: `https://orgfarm-fe59a2912e-dev-ed.develop.my.salesforce.com`
+- **Alias no CLI**: `sf-gestao-contratos` (definida como org padrão deste projeto)
+- **Salesforce CLI**: instalado via npm (`@salesforce/cli`)
 
-Para instalar (via npm, recomendado):
+Para qualquer integrante do grupo reconectar nesta mesma org pelo CLI (cada pessoa precisa logar com a própria sessão de navegador, mesmo usando a mesma org):
 ```bash
-npm install --global @salesforce/cli
-sf --version
+sf org login web -a sf-gestao-contratos --instance-url https://orgfarm-fe59a2912e-dev-ed.develop.my.salesforce.com
 ```
 
-Para conectar à org do grupo (Developer Edition ou Trailhead Playground):
+Para checar se a conexão está ativa a qualquer momento:
 ```bash
-sf org login web -a sf-gestao-contratos
+sf org display --target-org sf-gestao-contratos
 ```
-Isso abre o navegador para login; depois de autenticado, a org fica salva com o alias `sf-gestao-contratos`.
-
-Se o grupo ainda não tem nenhuma org:
-- Criar uma **Developer Edition** gratuita em developer.salesforce.com, ou
-- Usar um **Trailhead Playground** (se o curso já fornece um)
 
 ## Depois de criar tudo pela UI: trazendo para o repositório
 
