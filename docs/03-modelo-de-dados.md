@@ -19,7 +19,10 @@
 | Responsável Comercial | Lookup (User) | |
 | Renovação Automática | Checkbox | |
 | Dias para Vencimento | Fórmula (Data de Término − HOJE()) | atende requisito de campo fórmula |
-| Endereço de Faturamento | Lookup (`Endereco__c`) | integração ViaCEP, ver item 7 |
+| Total de Aditivos | Roll-Up Summary (COUNT de Aditivo) | atende requisito de Roll-Up Summary |
+| Valor Acumulado | Roll-Up Summary (SUM de Valor do Ajuste em Aditivo) | atende requisito de Roll-Up Summary |
+
+> Correção: removido o campo "Endereço de Faturamento" (Lookup de Contrato → Endereço) que constava numa versão anterior deste documento — ele duplicava, em sentido invertido, o relacionamento já definido no item 7 (Endereço → Contrato). Mantido só um relacionamento entre os dois objetos.
 
 ## 2. Cláusula Contratual (`Clausula_Contratual__c`) — Master-Detail → Contrato
 

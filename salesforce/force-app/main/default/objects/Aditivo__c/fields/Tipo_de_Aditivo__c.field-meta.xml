@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_de_Aditivo__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo de Aditivo</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Valor</fullName>
+                <default>false</default>
+                <label>Valor</label>
+            </value>
+            <value>
+                <fullName>Prazo</fullName>
+                <default>false</default>
+                <label>Prazo</label>
+            </value>
+            <value>
+                <fullName>Escopo</fullName>
+                <default>false</default>
+                <label>Escopo</label>
+            </value>
+            <value>
+                <fullName>Partes</fullName>
+                <default>false</default>
+                <label>Partes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

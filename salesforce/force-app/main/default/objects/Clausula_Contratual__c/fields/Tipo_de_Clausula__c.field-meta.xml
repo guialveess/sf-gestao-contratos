@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_de_Clausula__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo de Cláusula</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pagamento</fullName>
+                <default>false</default>
+                <label>Pagamento</label>
+            </value>
+            <value>
+                <fullName>Rescisão</fullName>
+                <default>false</default>
+                <label>Rescisão</label>
+            </value>
+            <value>
+                <fullName>Confidencialidade</fullName>
+                <default>false</default>
+                <label>Confidencialidade</label>
+            </value>
+            <value>
+                <fullName>SLA</fullName>
+                <default>false</default>
+                <label>SLA</label>
+            </value>
+            <value>
+                <fullName>Penalidade</fullName>
+                <default>false</default>
+                <label>Penalidade</label>
+            </value>
+            <value>
+                <fullName>Renovação</fullName>
+                <default>false</default>
+                <label>Renovação</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

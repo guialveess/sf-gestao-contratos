@@ -27,12 +27,13 @@ sf-gestao-contratos/
 1. Leia [docs/00-requisitos-obrigatorios.md](docs/00-requisitos-obrigatorios.md) e [docs/01-tema-e-objetivo.md](docs/01-tema-e-objetivo.md)
 2. Siga o checklist de [docs/04-plano-entrega-27-10.md](docs/04-plano-entrega-27-10.md) — é o que vale para a apresentação desta semana
 3. Use [docs/05-prompts-mentor.md](docs/05-prompts-mentor.md) para validar/refinar nome, marca e campos com IA
-4. Crie os objetos no Salesforce pela UI, depois instale o Salesforce CLI e traga os metadados para `salesforce/` (instruções em 04-plano-entrega-27-10.md)
+4. Os objetos já estão criados na org via deploy de metadados (ver `salesforce/force-app/main/default/objects/`); para alterar algo, edite o XML e rode `sf project deploy start --source-dir force-app --target-org sf-gestao-contratos`
 
 ## Status
 
 - [x] Marca definida (nome, slogan, logo) — ver [docs/02-marca.md](docs/02-marca.md)
-- [ ] Objetos e campos criados na org
-- [ ] App customizado criado
-- [ ] Metadados versionados neste repositório
+- [x] Objetos, campos e relacionamentos criados na org (7 objetos, ~60 campos, Roll-Ups, Record Types)
+- [x] App customizado "ContratAI" criado com todas as abas
+- [x] Metadados versionados neste repositório
+- [ ] Logo aplicado no app pela UI (upload de imagem não é feito via deploy)
 - [ ] Apresentação de 27/10 preparada

@@ -14,39 +14,47 @@
 ## Checklist de execução
 
 ### 1. Marca (ver [02-marca.md](02-marca.md))
-- [ ] Nome comercial definido
-- [ ] Slogan definido
-- [ ] Logotipo gerado e salvo em `docs/assets/`
+- [x] Nome comercial definido
+- [x] Slogan definido
+- [x] Logotipo gerado e salvo em `docs/assets/`
 
 ### 2. Modelo de dados (ver [03-modelo-de-dados.md](03-modelo-de-dados.md))
-- [ ] Validar a lista de campos de cada objeto rodando o Prompt 04 no ChatGPT
-- [ ] Criar os 6 objetos do tema no Object Manager (Contrato de Serviço, Cláusula Contratual, Aditivo, Renovação, Reajuste, Histórico Contratual)
-- [ ] Criar o objeto Endereço (obrigatório em todos os temas)
-- [ ] Criar os campos de cada objeto
-- [ ] Criar os relacionamentos (Master-Detail e Lookup) conforme o diagrama
-- [ ] Criar os Record Types do objeto Contrato (Anual, Bienal, Corporativo)
+- [x] Criar os 6 objetos do tema (Contrato de Serviço, Cláusula Contratual, Aditivo, Renovação, Reajuste, Histórico Contratual)
+- [x] Criar o objeto Endereço (obrigatório em todos os temas)
+- [x] Criar os campos de cada objeto
+- [x] Criar os relacionamentos (Master-Detail e Lookup) conforme o diagrama
+- [x] Criar os Record Types do objeto Contrato (Anual, Bienal, Corporativo)
+- [x] Criar os 2 Roll-Up Summary (Total de Aditivos, Valor Acumulado)
+- [ ] (Opcional) Validar/ajustar a lista de campos rodando o Prompt 04 no ChatGPT, se o grupo quiser revisar algo
 
 ### 3. Aplicativo customizado
-- [ ] App Manager → New Lightning App
-- [ ] Nome do app = nome comercial escolhido (ex.: "ContratAI")
-- [ ] Adicionar logotipo do app
-- [ ] Adicionar abas de todos os objetos do modelo
+- [x] Lightning App "ContratAI" criado com as 7 abas dos objetos
+- [ ] Subir o logotipo (`docs/assets/logo-contratai.png`) no app pela UI (Setup → App Manager → editar ContratAI → Branding) — upload de imagem não é feito via deploy
 - [ ] Definir perfis de acesso ao app (mínimo: visível para todos por enquanto, perfis detalhados entram na fase de Segurança)
 
 ### 4. Repositório de Código e Configurações (este repositório)
-- [ ] Projeto SFDX criado em `salesforce/` (feito — ver `salesforce/sfdx-project.json`)
-- [ ] Instalar o Salesforce CLI (ver abaixo)
-- [ ] Autenticar com a Org/Developer Edition/Trailhead Playground do grupo
-- [ ] Rodar `sf project retrieve start` para puxar os metadados reais (objetos, campos, app, layouts) para dentro de `salesforce/force-app`
-- [ ] Commitar os metadados retornados
+- [x] Projeto SFDX criado em `salesforce/`
+- [x] Salesforce CLI instalado e autenticado na org (`sf-gestao-contratos`)
+- [x] Objetos/campos/app escritos como metadados neste repositório e deployados na org via `sf project deploy start`
+- [x] Commit e push realizados
 
-## Passo a passo técnico no Salesforce (via UI)
+## Como os objetos foram criados (via metadados + deploy, não via UI manual)
 
-1. **Setup → Object Manager → Create → Custom Object** — repetir para os 7 objetos listados acima
-2. Em cada objeto, usar **Fields & Relationships → New** para criar os campos da tabela correspondente em [03-modelo-de-dados.md](03-modelo-de-dados.md)
-3. Ao criar campos de relacionamento, escolher **Master-Detail Relationship** ou **Lookup Relationship** conforme indicado
-4. Em **Contrato de Serviço → Record Types**, criar Anual / Bienal / Corporativo
-5. **App Manager → New Lightning App** — montar o app com nome, logotipo e abas
+Em vez de criar cada objeto/campo clicando no Object Manager, o modelo de dados inteiro foi escrito como arquivos de metadados (`salesforce/force-app/main/default/objects/...`) e enviado para a org de uma vez com:
+```bash
+cd salesforce
+sf project deploy start --source-dir force-app --target-org sf-gestao-contratos
+```
+Isso é equivalente ao resultado de criar tudo manualmente no Object Manager, só que fica registrado e versionado no repositório desde o início — e qualquer alteração futura (adicionar um campo, mudar um picklist) é feita editando o XML e rodando o deploy de novo, em vez de caçar o que foi mudado na UI depois.
+
+**Se o grupo preferir conferir visualmente**: entrem em Setup → Object Manager na org e naveguem pelos 7 objetos — tudo que está documentado em [03-modelo-de-dados.md](03-modelo-de-dados.md) já deve estar lá.
+
+**Se alguém do grupo criar algo direto pela UI** (ex.: ajustar um Page Layout, criar um Flow na fase de automação), o caminho é o inverso — trazer para o repositório com:
+```bash
+cd salesforce
+sf project retrieve start --target-org sf-gestao-contratos --metadata "Flow:NomeDoFlow"
+```
+e depois commitar o que for baixado.
 
 ## Org conectada
 
@@ -64,14 +72,6 @@ Para checar se a conexão está ativa a qualquer momento:
 ```bash
 sf org display --target-org sf-gestao-contratos
 ```
-
-## Depois de criar tudo pela UI: trazendo para o repositório
-
-```bash
-cd salesforce
-sf project retrieve start -o sf-gestao-contratos -m "CustomObject:Contrato_de_Servico__c" -m "CustomObject:Clausula_Contratual__c" -m "CustomObject:Aditivo__c" -m "CustomObject:Renovacao__c" -m "CustomObject:Reajuste__c" -m "CustomObject:Historico_Contratual__c" -m "CustomObject:Endereco__c" -m "CustomApplication"
-```
-(ou, de forma mais simples enquanto o projeto é pequeno: `sf project retrieve start -o sf-gestao-contratos -x manifest/package.xml` com um manifest gerado pelo próprio VS Code + extensão Salesforce)
 
 ## Pendências para depois de 27/10 (não é desta entrega)
 
