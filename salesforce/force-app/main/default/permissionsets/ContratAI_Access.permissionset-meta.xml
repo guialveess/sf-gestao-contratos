@@ -357,4 +357,24 @@
         <editable>true</editable>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <field>Contrato_de_Servico__c.Dias_para_Vencimento__c</field>
+        <editable>false</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Contrato_de_Servico__c.Total_de_Aditivos__c</field>
+        <editable>false</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Contrato_de_Servico__c.Valor_Acumulado__c</field>
+        <editable>false</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Reajuste__c.Valor_Reajustado__c</field>
+        <editable>false</editable>
+        <readable>true</readable>
+    </fieldPermissions>
 </PermissionSet>
