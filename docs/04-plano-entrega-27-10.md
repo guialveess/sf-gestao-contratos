@@ -60,9 +60,9 @@ sf --version
 
 Para conectar à org do grupo (Developer Edition ou Trailhead Playground):
 ```bash
-sf org login web -a residencia-contratos
+sf org login web -a sf-gestao-contratos
 ```
-Isso abre o navegador para login; depois de autenticado, a org fica salva com o alias `residencia-contratos`.
+Isso abre o navegador para login; depois de autenticado, a org fica salva com o alias `sf-gestao-contratos`.
 
 Se o grupo ainda não tem nenhuma org:
 - Criar uma **Developer Edition** gratuita em developer.salesforce.com, ou
@@ -72,9 +72,9 @@ Se o grupo ainda não tem nenhuma org:
 
 ```bash
 cd salesforce
-sf project retrieve start -o residencia-contratos -m "CustomObject:Contrato_de_Servico__c" -m "CustomObject:Clausula_Contratual__c" -m "CustomObject:Aditivo__c" -m "CustomObject:Renovacao__c" -m "CustomObject:Reajuste__c" -m "CustomObject:Historico_Contratual__c" -m "CustomObject:Endereco__c" -m "CustomApplication"
+sf project retrieve start -o sf-gestao-contratos -m "CustomObject:Contrato_de_Servico__c" -m "CustomObject:Clausula_Contratual__c" -m "CustomObject:Aditivo__c" -m "CustomObject:Renovacao__c" -m "CustomObject:Reajuste__c" -m "CustomObject:Historico_Contratual__c" -m "CustomObject:Endereco__c" -m "CustomApplication"
 ```
-(ou, de forma mais simples enquanto o projeto é pequeno: `sf project retrieve start -o residencia-contratos -x manifest/package.xml` com um manifest gerado pelo próprio VS Code + extensão Salesforce)
+(ou, de forma mais simples enquanto o projeto é pequeno: `sf project retrieve start -o sf-gestao-contratos -x manifest/package.xml` com um manifest gerado pelo próprio VS Code + extensão Salesforce)
 
 ## Pendências para depois de 27/10 (não é desta entrega)
 

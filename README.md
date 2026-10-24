@@ -7,7 +7,7 @@ Este repositório é o próprio entregável do critério "Repositório de Códig
 ## Estrutura
 
 ```
-residencia/
+sf-gestao-contratos/
 ├── docs/                           # toda a documentação do projeto
 │   ├── 00-requisitos-obrigatorios.md   # regras valendo para TODOS os temas
 │   ├── 01-tema-e-objetivo.md           # objetivo, objetos e relacionamentos do nosso tema
