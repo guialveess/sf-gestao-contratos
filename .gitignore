@@ -1,0 +1,15 @@
+# Salesforce CLI
+.sfdx/
+.sf/
+deploy-options.json
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Node (caso venha a usar LWC tooling local)
+node_modules/
+npm-debug.log*
