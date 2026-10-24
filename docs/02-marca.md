@@ -21,19 +21,19 @@ Se o grupo preferir, podem substituir por uma das alternativas abaixo antes da a
 
 ## Identidade visual
 
-Conceito: documento/contrato estilizado combinado com um ícone de ciclo de renovação (seta circular + check), paleta azul-petróleo + verde, tipografia sans-serif bold.
+Conceito: documento/contrato estilizado combinado com um ícone de ciclo de renovação (seta circular + check), paleta azul-petróleo + verde, tipografia sans-serif bold (Bricolage Grotesque).
 
-**Logo gerado:**
+Gerado localmente com um script Python (Pillow), sem depender de nenhuma conta ou serviço externo — arquivo versionado neste repositório, pronto para uso.
 
-![Logo ContratAI](https://www.canva.com/M/MAHY7jddqNI?utm_source=OC-AaBlKuT9h240&utm_campaign=agent_connector_create_image_asset_opened)
+**Logo:**
 
-- Link no Canva: https://www.canva.com/M/MAHY7jddqNI
-- Media ID (para regenerar variações): `MAHY7jddqNI`
+![Logo ContratAI](assets/logo-contratai.png)
+
+Arquivo: [`docs/assets/logo-contratai.png`](assets/logo-contratai.png)
 
 ## Pendência do grupo
 
 - [x] Nome comercial definido (ContratAI)
 - [x] Slogan definido
-- [x] Logotipo gerado
-- [ ] Baixar o PNG do logo pelo link do Canva acima e salvar em `docs/assets/logo-contratai.png` (versionar o arquivo, não só o link)
+- [x] Logotipo gerado e versionado (`docs/assets/logo-contratai.png`)
 - [ ] Aplicar o logo no Lightning App (App Manager → App Settings → upload da imagem)
