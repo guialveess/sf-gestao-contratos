@@ -3,31 +3,37 @@
 > Seguindo os Prompts 01–03 do mentor (ver [05-prompts-mentor.md](05-prompts-mentor.md)): nome → slogan → identidade visual.
 > Critério de avaliação: "Construção da Marca" (Aspectos Gerais).
 
-## Opções de nome comercial
+## Decisão (fechada para a entrega de 27/10)
 
-1. **ContratAI** — remete a contrato + inteligência/automação
+- **Nome comercial**: **ContratAI**
+- **Slogan**: "Cada contrato, no prazo certo."
+- **Logotipo**: gerado — ver abaixo. Se o grupo quiser trocar, basta ajustar aqui e eu regenero.
+
+Se o grupo preferir, podem substituir por uma das alternativas abaixo antes da apresentação — é só decisão de time, não trabalho técnico pendente.
+
+### Alternativas de nome (caso quiram trocar)
 2. **Renova+** — foco no processo de renovação, nome curto e comercial
 3. **ClauseFlow** — foco no fluxo de cláusulas/aditivos, tom mais "enterprise"
 
-> Recomendação: **ContratAI** — nome memorável, deixa claro o domínio (contratos) e soa como produto de mercado.
-
-## Opções de slogan (para o nome escolhido)
-
-Depois de decidir o nome, gerem o slogan no ChatGPT citando o nome escolhido (Prompt 02). Sugestões iniciais para "ContratAI":
-- "Cada contrato, no prazo certo."
+### Alternativas de slogan
 - "Contratos sob controle, renovações sem surpresa."
 - "Previsibilidade do início ao aditivo."
 
-## Identidade visual (Prompt 03)
+## Identidade visual
 
-Conceito sugerido para gerar o logotipo no ChatGPT/ferramenta de imagem:
-- Ícone: documento/contrato estilizado combinado com um símbolo de ciclo ou relógio (reforça "renovação" e "prazo")
-- Paleta: azul-petróleo (confiança, corporativo) + verde (indicador de "em dia"/aprovado)
-- Tipografia: sans-serif, peso médio/bold, transmitindo solidez jurídica/comercial
+Conceito: documento/contrato estilizado combinado com um ícone de ciclo de renovação (seta circular + check), paleta azul-petróleo + verde, tipografia sans-serif bold.
+
+**Logo gerado:**
+
+![Logo ContratAI](https://www.canva.com/M/MAHY7jddqNI?utm_source=OC-AaBlKuT9h240&utm_campaign=agent_connector_create_image_asset_opened)
+
+- Link no Canva: https://www.canva.com/M/MAHY7jddqNI
+- Media ID (para regenerar variações): `MAHY7jddqNI`
 
 ## Pendência do grupo
 
-- [ ] Rodar Prompt 01 no ChatGPT com o objetivo do tema (colado em [01-tema-e-objetivo.md](01-tema-e-objetivo.md)) e escolher o nome final
-- [ ] Rodar Prompt 02 com o nome escolhido e escolher o slogan final
-- [ ] Rodar Prompt 03 e gerar/ajustar o logotipo até ficar satisfatório
-- [ ] Salvar o logotipo final em `docs/assets/` (criar a pasta) e referenciar aqui
+- [x] Nome comercial definido (ContratAI)
+- [x] Slogan definido
+- [x] Logotipo gerado
+- [ ] Baixar o PNG do logo pelo link do Canva acima e salvar em `docs/assets/logo-contratai.png` (versionar o arquivo, não só o link)
+- [ ] Aplicar o logo no Lightning App (App Manager → App Settings → upload da imagem)

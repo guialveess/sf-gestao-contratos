@@ -31,7 +31,7 @@ residencia/
 
 ## Status
 
-- [ ] Marca definida (nome, slogan, logo)
+- [x] Marca definida (nome, slogan, logo) — ver [docs/02-marca.md](docs/02-marca.md)
 - [ ] Objetos e campos criados na org
 - [ ] App customizado criado
 - [ ] Metadados versionados neste repositório
