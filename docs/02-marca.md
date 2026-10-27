@@ -36,4 +36,4 @@ Arquivo: [`docs/assets/logo-contratai.png`](assets/logo-contratai.png)
 - [x] Nome comercial definido (ContratAI)
 - [x] Slogan definido
 - [x] Logotipo gerado e versionado (`docs/assets/logo-contratai.png`)
-- [ ] Aplicar o logo no Lightning App (App Manager → App Settings → upload da imagem)
+- [x] Aplicar o logo no Lightning App (App Manager → App Settings → upload da imagem), com a exibição habilitada no metadado do app (`shouldOverrideOrgTheme`)

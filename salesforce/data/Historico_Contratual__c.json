@@ -1,0 +1,40 @@
+{
+  "records": [
+    {
+      "attributes": {
+        "type": "Historico_Contratual__c",
+        "referenceId": "HistoricoCriacao"
+      },
+      "Contrato__c": "@ContratoDemo",
+      "Data_do_Evento__c": "2025-03-01T13:00:00.000Z",
+      "Tipo_de_Evento__c": "Criação",
+      "Descricao_do_Evento__c": "Contrato cadastrado no sistema após assinatura das duas partes.",
+      "Valor_Anterior__c": "",
+      "Valor_Novo__c": "R$ 8.500,00"
+    },
+    {
+      "attributes": {
+        "type": "Historico_Contratual__c",
+        "referenceId": "HistoricoAditivo"
+      },
+      "Contrato__c": "@ContratoDemo",
+      "Data_do_Evento__c": "2025-09-01T14:30:00.000Z",
+      "Tipo_de_Evento__c": "Aditivo",
+      "Descricao_do_Evento__c": "Primeiro aditivo aprovado, com inclusão de postos adicionais no escopo.",
+      "Valor_Anterior__c": "R$ 8.500,00",
+      "Valor_Novo__c": "R$ 9.700,00"
+    },
+    {
+      "attributes": {
+        "type": "Historico_Contratual__c",
+        "referenceId": "HistoricoReajuste"
+      },
+      "Contrato__c": "@ContratoDemo",
+      "Data_do_Evento__c": "2026-03-01T12:00:00.000Z",
+      "Tipo_de_Evento__c": "Reajuste",
+      "Descricao_do_Evento__c": "Reajuste anual aplicado conforme índice previsto na cláusula de pagamento.",
+      "Valor_Anterior__c": "R$ 8.500,00",
+      "Valor_Novo__c": "R$ 8.882,50"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "records": [
+    {
+      "attributes": {
+        "type": "Contrato_de_Servico__c",
+        "referenceId": "ContratoDemo"
+      },
+      "Objeto_do_Contrato__c": "Prestação de serviços de suporte e sustentação de ambiente de TI, com atendimento em horário comercial e SLA de 8 horas úteis",
+      "Data_de_Inicio__c": "2025-03-01",
+      "Data_de_Termino__c": "2027-03-01",
+      "Valor_Mensal__c": 8500.00,
+      "Status__c": "Em Renovação",
+      "Renovacao_Automatica__c": false
+    }
+  ]
+}

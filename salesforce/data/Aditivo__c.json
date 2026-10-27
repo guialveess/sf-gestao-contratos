@@ -1,0 +1,30 @@
+{
+  "records": [
+    {
+      "attributes": {
+        "type": "Aditivo__c",
+        "referenceId": "AditivoValor"
+      },
+      "Contrato__c": "@ContratoDemo",
+      "Tipo_de_Aditivo__c": "Valor",
+      "Data_do_Aditivo__c": "2025-09-01",
+      "Descricao__c": "Inclusão de 2 postos adicionais de atendimento no escopo mensal, com reflexo no valor do contrato.",
+      "Valor_do_Ajuste__c": 1200.00,
+      "Novo_Valor_do_Contrato__c": 9700.00,
+      "Status__c": "Aprovado"
+    },
+    {
+      "attributes": {
+        "type": "Aditivo__c",
+        "referenceId": "AditivoPrazo"
+      },
+      "Contrato__c": "@ContratoDemo",
+      "Tipo_de_Aditivo__c": "Prazo",
+      "Data_do_Aditivo__c": "2026-02-15",
+      "Descricao__c": "Prorrogação da vigência por 12 meses, com ajuste de valor referente à ampliação da janela de atendimento.",
+      "Valor_do_Ajuste__c": 800.00,
+      "Novo_Valor_do_Contrato__c": 10500.00,
+      "Status__c": "Em Análise"
+    }
+  ]
+}

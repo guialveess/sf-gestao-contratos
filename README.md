@@ -17,6 +17,7 @@ sf-gestao-contratos/
 │   └── 05-prompts-mentor.md            # prompts de IA sugeridos pelo mentor
 ├── salesforce/                     # projeto SFDX (metadados do Salesforce)
 │   ├── sfdx-project.json
+│   ├── data/                       # massa de dados de demonstração (1 arquivo por objeto)
 │   └── force-app/main/default/     # objects, applications, flows, classes, lwc, etc.
 ├── Sugestões de Prompts.pdf        # material original do mentor
 └── Temas de Projetos.pdf           # material original da Capgemini (requisitos + temas)
@@ -36,4 +37,5 @@ sf-gestao-contratos/
 - [x] App customizado "ContratAI" criado com todas as abas
 - [x] Metadados versionados neste repositório
 - [x] Logo aplicado no app pela UI (upload de imagem não é feito via deploy)
+- [x] Massa de dados de demonstração versionada em `salesforce/data/` (ver [salesforce/data/README.md](salesforce/data/README.md))
 - [ ] Apresentação de 27/10 preparada

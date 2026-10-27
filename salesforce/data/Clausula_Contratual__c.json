@@ -1,0 +1,46 @@
+{
+  "records": [
+    {
+      "attributes": {
+        "type": "Clausula_Contratual__c",
+        "referenceId": "ClausulaPagamento"
+      },
+      "Contrato__c": "@ContratoDemo",
+      "Titulo_da_Clausula__c": "Condições de pagamento",
+      "Numero_da_Clausula__c": 1,
+      "Tipo_de_Clausula__c": "Pagamento",
+      "Descricao__c": "O pagamento será realizado até o 5º dia útil do mês subsequente à prestação dos serviços, mediante apresentação de nota fiscal.",
+      "Obrigatoria__c": true,
+      "Status__c": "Vigente",
+      "Data_de_Inclusao__c": "2025-03-01"
+    },
+    {
+      "attributes": {
+        "type": "Clausula_Contratual__c",
+        "referenceId": "ClausulaSLA"
+      },
+      "Contrato__c": "@ContratoDemo",
+      "Titulo_da_Clausula__c": "Nível de serviço acordado",
+      "Numero_da_Clausula__c": 2,
+      "Tipo_de_Clausula__c": "SLA",
+      "Descricao__c": "A contratada se obriga a iniciar o atendimento dos chamados classificados como críticos em até 8 horas úteis contadas da abertura.",
+      "Obrigatoria__c": true,
+      "Status__c": "Vigente",
+      "Data_de_Inclusao__c": "2025-03-01"
+    },
+    {
+      "attributes": {
+        "type": "Clausula_Contratual__c",
+        "referenceId": "ClausulaRescisao"
+      },
+      "Contrato__c": "@ContratoDemo",
+      "Titulo_da_Clausula__c": "Rescisão imotivada",
+      "Numero_da_Clausula__c": 3,
+      "Tipo_de_Clausula__c": "Rescisão",
+      "Descricao__c": "Qualquer das partes poderá rescindir o contrato sem justa causa, mediante aviso prévio por escrito de 60 dias.",
+      "Obrigatoria__c": false,
+      "Status__c": "Em Revisão",
+      "Data_de_Inclusao__c": "2025-03-01"
+    }
+  ]
+}

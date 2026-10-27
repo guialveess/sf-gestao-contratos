@@ -1,0 +1,18 @@
+{
+  "records": [
+    {
+      "attributes": {
+        "type": "Renovacao__c",
+        "referenceId": "RenovacaoDemo"
+      },
+      "Contrato__c": "@ContratoDemo",
+      "Data_da_Renovacao__c": "2027-03-01",
+      "Novo_Prazo_Final__c": "2028-03-01",
+      "Valor_Renovado__c": 10972.50,
+      "Status_da_Renovacao__c": "Em Negociação",
+      "Percentual_de_Reajuste_Aplicado__c": 4.50,
+      "Data_Limite_para_Decisao__c": "2027-01-30",
+      "Observacoes__c": "Renovação em negociação com o cliente. Proposta enviada com reajuste pelo IPCA acumulado dos últimos 12 meses."
+    }
+  ]
+}

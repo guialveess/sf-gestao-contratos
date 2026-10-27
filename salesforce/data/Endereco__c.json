@@ -1,0 +1,19 @@
+{
+  "records": [
+    {
+      "attributes": {
+        "type": "Endereco__c",
+        "referenceId": "EnderecoDemo"
+      },
+      "Contrato__c": "@ContratoDemo",
+      "CEP__c": "50030-230",
+      "Logradouro__c": "Avenida Rio Branco",
+      "Numero__c": "245",
+      "Complemento__c": "Sala 1203",
+      "Bairro__c": "Recife",
+      "Cidade__c": "Recife",
+      "Estado__c": "PE",
+      "Log_de_Integracao__c": "Endereço cadastrado manualmente para demonstração. Quando a integração com o ViaCEP for implementada, este campo passa a registrar a resposta da API."
+    }
+  ]
+}

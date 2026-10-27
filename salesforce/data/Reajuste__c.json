@@ -1,0 +1,16 @@
+{
+  "records": [
+    {
+      "attributes": {
+        "type": "Reajuste__c",
+        "referenceId": "ReajusteDemo"
+      },
+      "Contrato__c": "@ContratoDemo",
+      "Data_do_Reajuste__c": "2026-03-01",
+      "Indice_Aplicado__c": "IPCA",
+      "Percentual_de_Reajuste__c": 4.50,
+      "Valor_Anterior__c": 8500.00,
+      "Status__c": "Aplicado"
+    }
+  ]
+}

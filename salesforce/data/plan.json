@@ -1,0 +1,44 @@
+[
+  {
+    "sobject": "Contrato_de_Servico__c",
+    "files": ["Contrato_de_Servico__c.json"],
+    "saveRefs": true,
+    "resolveRefs": false
+  },
+  {
+    "sobject": "Clausula_Contratual__c",
+    "files": ["Clausula_Contratual__c.json"],
+    "saveRefs": false,
+    "resolveRefs": true
+  },
+  {
+    "sobject": "Aditivo__c",
+    "files": ["Aditivo__c.json"],
+    "saveRefs": false,
+    "resolveRefs": true
+  },
+  {
+    "sobject": "Renovacao__c",
+    "files": ["Renovacao__c.json"],
+    "saveRefs": false,
+    "resolveRefs": true
+  },
+  {
+    "sobject": "Reajuste__c",
+    "files": ["Reajuste__c.json"],
+    "saveRefs": false,
+    "resolveRefs": true
+  },
+  {
+    "sobject": "Historico_Contratual__c",
+    "files": ["Historico_Contratual__c.json"],
+    "saveRefs": false,
+    "resolveRefs": true
+  },
+  {
+    "sobject": "Endereco__c",
+    "files": ["Endereco__c.json"],
+    "saveRefs": false,
+    "resolveRefs": true
+  }
+]
