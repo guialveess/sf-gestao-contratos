@@ -27,6 +27,10 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>Objeto_do_Contrato__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>Cliente__c</field>
             </layoutItems>
             <layoutItems>

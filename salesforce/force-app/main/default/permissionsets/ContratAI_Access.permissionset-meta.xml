@@ -145,6 +145,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <field>Contrato_de_Servico__c.Objeto_do_Contrato__c</field>
+        <editable>true</editable>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <field>Clausula_Contratual__c.Data_de_Inclusao__c</field>
         <editable>true</editable>
         <readable>true</readable>
