@@ -35,5 +35,5 @@ sf-gestao-contratos/
 - [x] Objetos, campos e relacionamentos criados na org (7 objetos, ~60 campos, Roll-Ups, Record Types)
 - [x] App customizado "ContratAI" criado com todas as abas
 - [x] Metadados versionados neste repositório
-- [ ] Logo aplicado no app pela UI (upload de imagem não é feito via deploy)
+- [x] Logo aplicado no app pela UI (upload de imagem não é feito via deploy)
 - [ ] Apresentação de 27/10 preparada

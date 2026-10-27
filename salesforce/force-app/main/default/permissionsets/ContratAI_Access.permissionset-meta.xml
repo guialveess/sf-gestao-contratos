@@ -6,6 +6,18 @@
     </applicationVisibilities>
     <label>Acesso ContratAI</label>
     <description>Libera o app ContratAI, as abas e o acesso completo aos objetos e campos do modulo de Gestao de Contratos e Renovacoes.</description>
+    <recordTypeVisibilities>
+        <recordType>Contrato_de_Servico__c.Anual</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Contrato_de_Servico__c.Bienal</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Contrato_de_Servico__c.Corporativo</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
     <tabSettings>
         <tab>Contrato_de_Servico__c</tab>
         <visibility>Visible</visibility>
