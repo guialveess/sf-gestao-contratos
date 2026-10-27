@@ -2,11 +2,16 @@
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
     <brand>
         <headerColor>#0B4952</headerColor>
-        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+        <logo>logocontratai</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
     </brand>
+    <description>Sistema de Gestão de Contratos e Renovações. Centraliza contratos de serviço, cláusulas contratuais, aditivos, renovações, reajustes e histórico contratual, com cálculo automático de prazos e valores acumulados</description>
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
     <label>ContratAI</label>
     <navType>Standard</navType>
     <tabs>Contrato_de_Servico__c</tabs>
