@@ -8,5 +8,6 @@
     <relationshipLabel>Cliente</relationshipLabel>
     <relationshipName>Contratos</relationshipName>
     <required>false</required>
+    <trackHistory>true</trackHistory>
     <type>Lookup</type>
 </CustomField>

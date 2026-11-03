@@ -4,5 +4,6 @@
     <externalId>false</externalId>
     <label>Data de Término</label>
     <required>false</required>
+    <trackHistory>true</trackHistory>
     <type>Date</type>
 </CustomField>
