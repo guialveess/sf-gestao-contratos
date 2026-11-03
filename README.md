@@ -13,8 +13,9 @@ sf-gestao-contratos/
 │   ├── 01-tema-e-objetivo.md           # objetivo, objetos e relacionamentos do nosso tema
 │   ├── 02-marca.md                     # nome, slogan, identidade visual
 │   ├── 03-modelo-de-dados.md           # campos de cada objeto customizado
-│   ├── 04-plano-entrega-27-10.md       # checklist e passo a passo da entrega desta semana
-│   └── 05-prompts-mentor.md            # prompts de IA sugeridos pelo mentor
+│   ├── 04-plano-entrega-27-10.md       # checklist e passo a passo da entrega de 27/10
+│   ├── 05-prompts-mentor.md            # prompts de IA sugeridos pelo mentor
+│   └── 06-diagrama-modelo-dados.md     # diagrama ER dos 7 objetos e relacionamentos
 ├── salesforce/                     # projeto SFDX (metadados do Salesforce)
 │   ├── sfdx-project.json
 │   ├── data/                       # massa de dados de demonstração (1 arquivo por objeto)
@@ -38,4 +39,7 @@ sf-gestao-contratos/
 - [x] Metadados versionados neste repositório
 - [x] Logo aplicado no app pela UI (upload de imagem não é feito via deploy)
 - [x] Massa de dados de demonstração versionada em `salesforce/data/` (ver [salesforce/data/README.md](salesforce/data/README.md))
-- [ ] Apresentação de 27/10 preparada
+- [x] Apresentação de 27/10 realizada
+- [x] Histórico de campos habilitado no Contrato de Serviço + related lists na aba Relacionado (feedback pós-apresentação)
+- [x] Diagrama do modelo de dados — ver [docs/06-diagrama-modelo-dados.md](docs/06-diagrama-modelo-dados.md)
+- [ ] Dashboard com indicadores (em andamento)
