@@ -15,7 +15,8 @@ sf-gestao-contratos/
 │   ├── 03-modelo-de-dados.md           # campos de cada objeto customizado
 │   ├── 04-plano-entrega-27-10.md       # checklist e passo a passo da entrega de 27/10
 │   ├── 05-prompts-mentor.md            # prompts de IA sugeridos pelo mentor
-│   └── 06-diagrama-modelo-dados.md     # diagrama ER dos 7 objetos e relacionamentos
+│   ├── 06-diagrama-modelo-dados.md     # diagrama ER dos 7 objetos e relacionamentos
+│   └── 07-dashboard-e-relatorios.md    # reports criados e passo a passo do dashboard
 ├── salesforce/                     # projeto SFDX (metadados do Salesforce)
 │   ├── sfdx-project.json
 │   ├── data/                       # massa de dados de demonstração (1 arquivo por objeto)
@@ -42,4 +43,5 @@ sf-gestao-contratos/
 - [x] Apresentação de 27/10 realizada
 - [x] Histórico de campos habilitado no Contrato de Serviço + related lists na aba Relacionado (feedback pós-apresentação)
 - [x] Diagrama do modelo de dados — ver [docs/06-diagrama-modelo-dados.md](docs/06-diagrama-modelo-dados.md)
-- [ ] Dashboard com indicadores (em andamento)
+- [x] 2 Reports criados via API (Contratos por Status, Contratos por Tipo) — ver [docs/07-dashboard-e-relatorios.md](docs/07-dashboard-e-relatorios.md)
+- [ ] Dashboard "ContratAI - Visão Geral" montado na UI com os 2 reports (passo a passo no doc acima)
